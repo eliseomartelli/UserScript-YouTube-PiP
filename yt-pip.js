@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube PiP Shortcut
-// @version      0.0.1
+// @version      0.0.2
 // @encoding     utf-8
 // @description  Open PiP in YouTube with a shortcut
 // @author       Eliseo Martelli
@@ -18,11 +18,11 @@
 // ==/UserScript==
 
 /**
- * ⌥ + p
+ * Key combination to use.
  *
  * @param {KeyboardEvent} e - Keyboard Event
  */
-const KEY_COMBINATION = (e) => e.key === "π";
+const KEY_COMBINATION = (e) => e.code === "KeyP" && e.altKey;
 
 (function () {
   "use strict";
